@@ -12,7 +12,7 @@ export default function OrderSuccessPage() {
       
       <div className="bg-gray-50 p-6 rounded-lg w-full max-w-md mb-8 border text-left">
         <h2 className="font-bold text-lg mb-2">Order Details</h2>
-        <div className="text-sm text-gray-600 mb-1"><span className="font-medium">Order ID:</span> ORD-{Math.floor(Math.random() * 1000000)}</div>
+        <div className="text-sm text-gray-600 mb-1"><span className="font-medium">Order ID:</span> ORD-123456</div>
         <div className="text-sm text-gray-600"><span className="font-medium">Status:</span> Payment Confirmed - Store Accepted</div>
       </div>
 
