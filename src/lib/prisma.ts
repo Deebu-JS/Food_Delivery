@@ -2,7 +2,8 @@ import { PrismaClient } from "@prisma/client"
 
 const prismaClientSingleton = () => {
   return new PrismaClient({
-    accelerateUrl: process.env.DATABASE_URL,
+    // Fallback URL during Vercel build process when env vars might be missing
+    accelerateUrl: process.env.DATABASE_URL || "prisma+postgres://dummy:5432/db",
   })
 }
 
